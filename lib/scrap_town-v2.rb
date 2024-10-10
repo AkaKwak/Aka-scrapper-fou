@@ -1,4 +1,4 @@
-#scrap_town.rb
+#scrap_town_v2.rb
 
 require 'nokogiri'
 require 'http'
