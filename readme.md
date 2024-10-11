@@ -20,7 +20,7 @@ Avant de lancer le projet, assurez-vous d'avoir installé les dépendances suiva
 
 1. Clonez ce dépôt sur votre machine locale :
 
-   ````bash git clone https://github.com/votre-utilisateur/scrapping-mairies.git`
+   ````bash git clone https://github.com/votre-utilisateur/scrapping-mairies.git```
 
 2. Accédez au répertoire du projet :
     `cd scrapping-mairies`
@@ -48,16 +48,17 @@ Pour exécuter le script de scrapping, suivez ces étapes :
 
 ## Détails techniques
 
-Fichier scrap_town.rb
+# Fichier `scrap_town.rb`
 
-    Fonction get_townhall_email : Cette fonction prend en paramètre l'URL d'une mairie et retourne l'adresse e-mail associée.
+    ```Fonction get_townhall_email : Cette fonction prend en paramètre l'URL d'une mairie et retourne l'adresse e-mail associée.
 
-    Fonction get_townhall_urls : Cette fonction récupère la liste des mairies et leurs e-mails sur une page spécifique de l'annuaire.
+    Fonction get_townhall_urls : Cette fonction récupère la liste des mairies et leurs e-mails sur une page spécifique de l'annuaire.```
 
-## Scrapping avec Nokogiri
+# Scrapping avec Nokogiri
 
-Le projet utilise Nokogiri pour analyser le HTML de la page web. Voici un exemple de son utilisation dans le fichier scrap_town.rb :
+Le projet utilise Nokogiri pour analyser le HTML de la page web. Voici un exemple de son utilisation dans le fichier `scrap_town.rb` :
 
+```
 require 'nokogiri'
     require 'open-uri'
 
@@ -66,5 +67,30 @@ def get_townhall_email(townhall_url)
   mail = doc.css('.send-mail').text
   mail
 end
+```
+# Fichier `menu_scrap.rb`
+Le fichier menu_scrap.rb contient un menu interactif qui permet de choisir différents scripts à exécuter, y compris le scrapping des mairies.
 
+## Tests
 
+Le projet inclut des tests avec RSpec. Vous pouvez exécuter les tests avec la commande suivante :
+
+`bundle exec rspec`
+
+Les fichiers de test sont situés dans le répertoire `spec/`, par exemple :
+
+-`spec/scrap_town_spec.rb` pour tester le scrapping des mairies.
+-`spec/scrap_cmc_spec.rb` pour tester d'autres scripts de scrapping.
+
+# Améliorations futures
+
+*Ajouter la possibilité d'enregistrer les résultats dans un fichier CSV.
+*Étendre le scrapping à d'autres départements et services publics.
+*Optimiser le script pour gérer un grand nombre de pages plus rapidement.
+
+## Contributeurs
+
+* Aka'
+
+## License
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails.
