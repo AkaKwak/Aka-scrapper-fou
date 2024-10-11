@@ -50,9 +50,10 @@ Pour exécuter le script de scrapping, suivez ces étapes :
 
 ## Fichier `scrap_town.rb`
 
-    ```Fonction get_townhall_email : Cette fonction prend en paramètre l'URL d'une mairie et retourne l'adresse e-mail associée.
-
-    Fonction get_townhall_urls : Cette fonction récupère la liste des mairies et leurs e-mails sur une page spécifique de l'annuaire.```
+```
+Fonction get_townhall_email : Cette fonction prend en paramètre l'URL d'une mairie et retourne l'adresse e-mail associée.
+Fonction get_townhall_urls : Cette fonction récupère la liste des mairies et leurs e-mails sur une page spécifique de l'annuaire.
+```
 
 ## Scrapping avec Nokogiri
 
