@@ -40,10 +40,10 @@ Pour exécuter le script de scrapping, suivez ces étapes :
 
 3. Choisissez l'option correspondant au scrapping des mairies. Le script récupérera les informations des mairies du Val-d'Oise et affichera les résultats dans la console.
 
-    Exemple de sortie :
+    ```Exemple de sortie :
 
     Nom de la mairie : Paris, URL : https://lannuaire.service-public.fr/mairie/paris
-    Nom de la mairie : Lyon, URL : https://lannuaire.service-public.fr/mairie/lyon`
+    Nom de la mairie : Lyon, URL : https://lannuaire.service-public.fr/mairie/lyon```
 
 
 ## Détails techniques
