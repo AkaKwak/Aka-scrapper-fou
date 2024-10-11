@@ -58,13 +58,13 @@ Pour exécuter le script de scrapping, suivez ces étapes :
 
 Le projet utilise Nokogiri pour analyser le HTML de la page web. Voici un exemple de son utilisation dans le fichier `scrap_town.rb` :
 
-```
+```ruby
 require 'nokogiri'
-    require 'open-uri'
+require 'open-uri'
 
 def get_townhall_email(townhall_url)
   doc = Nokogiri::HTML(URI.open(townhall_url))
-  mail = doc.css('.send-mail').text
+    mail = doc.css('.send-mail').text
   mail
 end
 ```
@@ -79,14 +79,14 @@ Le projet inclut des tests avec RSpec. Vous pouvez exécuter les tests avec la c
 
 Les fichiers de test sont situés dans le répertoire `spec/`, par exemple :
 
--`spec/scrap_town_spec.rb` pour tester le scrapping des mairies.
--`spec/scrap_cmc_spec.rb` pour tester d'autres scripts de scrapping.
+- `spec/scrap_town_spec.rb` pour tester le scrapping des mairies.
+- `spec/scrap_cmc_spec.rb` pour tester d'autres scripts de scrapping.
 
 ## Améliorations futures
 
-*Ajouter la possibilité d'enregistrer les résultats dans un fichier CSV.
-*Étendre le scrapping à d'autres départements et services publics.
-*Optimiser le script pour gérer un grand nombre de pages plus rapidement.
+* Ajouter la possibilité d'enregistrer les résultats dans un fichier CSV.
+* Étendre le scrapping à d'autres départements et services publics.
+* Optimiser le script pour gérer un grand nombre de pages plus rapidement.
 
 ## Contributeurs
 
