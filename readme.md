@@ -48,13 +48,13 @@ Pour exécuter le script de scrapping, suivez ces étapes :
 
 ## Détails techniques
 
-# Fichier `scrap_town.rb`
+## Fichier `scrap_town.rb`
 
     ```Fonction get_townhall_email : Cette fonction prend en paramètre l'URL d'une mairie et retourne l'adresse e-mail associée.
 
     Fonction get_townhall_urls : Cette fonction récupère la liste des mairies et leurs e-mails sur une page spécifique de l'annuaire.```
 
-# Scrapping avec Nokogiri
+## Scrapping avec Nokogiri
 
 Le projet utilise Nokogiri pour analyser le HTML de la page web. Voici un exemple de son utilisation dans le fichier `scrap_town.rb` :
 
@@ -68,7 +68,7 @@ def get_townhall_email(townhall_url)
   mail
 end
 ```
-# Fichier `menu_scrap.rb`
+## Fichier `menu_scrap.rb`
 Le fichier menu_scrap.rb contient un menu interactif qui permet de choisir différents scripts à exécuter, y compris le scrapping des mairies.
 
 ## Tests
@@ -82,7 +82,7 @@ Les fichiers de test sont situés dans le répertoire `spec/`, par exemple :
 -`spec/scrap_town_spec.rb` pour tester le scrapping des mairies.
 -`spec/scrap_cmc_spec.rb` pour tester d'autres scripts de scrapping.
 
-# Améliorations futures
+## Améliorations futures
 
 *Ajouter la possibilité d'enregistrer les résultats dans un fichier CSV.
 *Étendre le scrapping à d'autres départements et services publics.
