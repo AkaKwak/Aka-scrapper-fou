@@ -20,7 +20,7 @@ Avant de lancer le projet, assurez-vous d'avoir installé les dépendances suiva
 
 1. Clonez ce dépôt sur votre machine locale :
 
-   ````bash git clone https://github.com/votre-utilisateur/scrapping-mairies.git```
+   ```bash git clone https://github.com/votre-utilisateur/scrapping-mairies.git```
 
 2. Accédez au répertoire du projet :
     `cd scrapping-mairies`
